@@ -13,7 +13,7 @@ class ArtistsController < ApplicationController
     if preference.allow_create_artists
       
     else 
-      
+      redirect_to artists_path
     end
   end
 
