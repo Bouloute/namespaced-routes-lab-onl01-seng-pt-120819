@@ -9,6 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
+    preference = Preference.first #There should only be one and only one Preference instance
     binding.pry
   end
 
